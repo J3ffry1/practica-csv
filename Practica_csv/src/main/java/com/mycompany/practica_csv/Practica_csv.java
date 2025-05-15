@@ -11,7 +11,7 @@ public class Practica_csv {
 
         System.out.print("Cuantos productos quieres ingresar? ");
         int cantidadProductos = scanner.nextInt();
-        scanner.nextLine(); // limpia el salto de línea
+       
 
         for (int i = 0; i < cantidadProductos; i++) {
             System.out.println("\nProducto #" + (i + 1));
@@ -28,7 +28,7 @@ public class Practica_csv {
             productos.add(new Producto(nombre, precio, cantidad));
         }
 
-        // Guardar en archivo CSV
+       
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("productos.csv"));
 
@@ -43,7 +43,7 @@ public class Practica_csv {
             System.out.println("Error al guardar: " + e.getMessage());
         }
 
-        // Leer desde el archivo CSV
+       
         System.out.println("\nProductos leidos desde el archivo:");
         try {
             BufferedReader reader = new BufferedReader(new FileReader("productos.csv"));
