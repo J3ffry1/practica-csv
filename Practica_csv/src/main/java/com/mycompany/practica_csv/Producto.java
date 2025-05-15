@@ -28,7 +28,7 @@ public class Producto {
         System.out.println("Nombre: " + nombre + " | Precio: " + precio + " | Cantidad: " + cantidad);
     }
 
-    // Getters y setters
+
     public String getNombre() { return nombre; }
     public void setNombre(String nombre) { this.nombre = nombre; }
 
